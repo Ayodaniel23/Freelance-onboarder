@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instaboard - Freelancer Invoice Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Instaboard</h1>
+            <p>Effortlessly generate invoices for your freelance work</p>
+        </header>
+
+        <div class="form-container">
+            <div class="invoice-form">
+                <label for="client-name">Client Name</label>
+                <input type="text" id="client-name" placeholder="Enter Client's Name" required>
+
+                <label for="service-description">Service Description</label>
+                <input type="text" id="service-description" placeholder="Enter the service provided" required>
+
+                <label for="rate">Rate (INR)</label>
+                <input type="number" id="rate" placeholder="Enter the rate per service" required>
+
+                <label for="gst">GST (%)</label>
+                <input type="number" id="gst" placeholder="Enter GST rate (default: 18)" value="18" required>
+
+                <button onclick="generateInvoice()">Generate Invoice</button>
+            </div>
+        </div>
+
+        <div class="invoice-output" id="invoice-output"></div>
+
+        <footer>
+            <p>Instaboard | 2025</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
